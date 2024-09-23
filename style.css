@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(56, 55, 55);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background: linear-gradient(90deg , #000000 30%, #660404 70%);/*Fazer um degrade em cores (90deg em graus a divisoria da divisão)*/
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+h1{
+    font-size: 38px;
+    font-family: "Source Code Pro", monospace;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-size: 32px;
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container li{
+    display: inline;
+    margin-left: 16px;
+}
+
+header .container a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    border: outset;
+    border-color: rgb(121, 27, 24);
+    background-color: rgb(100, 14, 14);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+header .container a:hover{
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(160, 51, 0);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+}
+
+header .container form{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    right: 850px;
+}
+
+header input{
+    padding: 6px 44px;
+    border-radius: 10px;
+}
+
+header label{
+    font-size: 24px;
+}
+
+header label:hover{
+    cursor: pointer;
+}
+
+section #banner{
+    height: 400px;
+    width: 80%;
+    margin: 4px 10%;
+}
+
+section #autorbanner{
+    color: rgb(72, 72, 231);
+    position: absolute;
+    top: 510px;
+    right: 450px;
+}
+
+section .container .background{
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+}
+
+section .background h2{
+    font-size: 32px;
+    padding: 12px 24px;
+    background: linear-gradient(90deg , #000000 30%, #660404 70%);
+    color: white;
+}
+
+section .container .itens{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section .container .background article{
+    width: 25%;
+    margin: 50px 4%;
+    border-style:ridge;
+    border-color: rgba(245, 241, 241, 0.274);
+    border-radius: 5px;
+    padding: 16px;
+}
+
+section .container .background img{
+    height: 200px;
+    position: absolute;
+    margin: 2px 40px 2px 40px ;
+    transition: 0.5s;
+}
+
+section .container .background img:hover{
+    height: 220px;
+}
+
+section .container .background h3{
+    margin-top: 230px;
+    transition: 0.3s;
+}
+
+section .container h3, 
+section .container p{
+    margin: 10px 0px;
+}
+
+section .container .background h3:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section .container a{
+    text-decoration: none;
+    color: rgb(24, 187, 9);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section .container a:hover{
+    font-size: 20px;
+}
+
+section .container #new{
+    margin-top: 100px;
+    text-align: center;
+    color:#ff0707;
+}
+
+section .container .colection{
+    background: radial-gradient(ellipse, #660404 15%, #000000);
+    width: 1000px;
+    border-radius: 250px;
+    padding: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 170px auto;
+}
+
+section .container .colection img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border-radius: 20px;
+    border-style: ridge;
+    transition: 0.5s;
+}
+
+section .container .colection img:hover{
+    cursor: pointer;
+    height: 270px;
+    width: 270px;
+    box-shadow: 0px 10px 15px 5px rgba(10, 9, 9, 0.74);
+}
+
+section .container .colection h3{
+    margin-left: 10px;
+    margin-top: 270px;
+    cursor: pointer;
+}
+
+section .container #contacts{
+    color:rgb(241, 90, 3);
+}
+
+section .container #contacts h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section .container #contacts{
+    font-size: 20px;
+}
+
+section .contacts-methods{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+section .contacts-methods div{
+    margin: 50px 150px 0px 150px;
+}
+
+.contacts-methods h3,
+.contacts-methods form input,
+form textarea,
+form button{
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+    padding-top: 8px;
+    border-radius: 5px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section .contacts-methods textarea{
+    resize: none;
+    height: 180px;
+}
+
+input:focus, textarea:focus{
+    outline-color: #ff0707;
+}
+
+section .contacts-methods button{
+    width: 100px;
+    padding: 8px;
+    background-color: #660404;
+    border-style: ridge;
+    border-color: #ff0707;
+    transition: 0.5s;
+    margin-left: 70px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+section .contacts-methods button:hover{
+    background-color: rgb(160, 51, 0);
+}
+
+section .contacts-methods img{
+    height: 32px;
+    margin-right: 10px;
+}
+
+section .contacts-methods img:hover{
+    cursor: pointer;
+}
+
+Footer{
+    background: linear-gradient(90deg , #000000 30%, #660404 70%);
+    margin: auto;
+    padding: 16px;
+}
+
+footer hr{
+    border-color: #000000;
+}
