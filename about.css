@@ -170,7 +170,7 @@ input:focus, textarea:focus {
 }
 
 footer {
-    background-color: #182C61;
+    background: linear-gradient(90deg , #000000 30%, #660404 70%);/*Fazer um degrade em cores (90deg em graus a divisoria da divisão)*/
     color:#ecf0f1;
     padding: 12px;
 }
