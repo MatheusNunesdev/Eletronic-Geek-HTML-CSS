@@ -57,18 +57,22 @@ header .container li{
 }
 
 header .container a{
+    font-family: "Bungee", sans-serif; 
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
     padding: 8px;
     text-decoration: none;
-    font-size: 18px;
     border: outset;
-    border-color: rgb(121, 27, 24);
+    border-radius: 10px;
+    border-color: #415796;
     background-color: rgb(100, 14, 14);
     color: rgb(255, 255, 255);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 header .container a:hover{
     padding: 10px;
-    font-size: 22px;
+    font-size: 15px;
     background-color: rgb(160, 51, 0);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
 }
@@ -77,12 +81,14 @@ header .container form{
     position: absolute;
     display: flex;
     top: 25px;
-    right: 850px;
+    right: 810px;
 }
 
 header input{
-    padding: 6px 44px;
-    border-radius: 10px;
+    padding: 8px 80px;
+    border-radius: 20px;
+    background-color:#10255e;
+    color: white;
 }
 
 header label{
@@ -116,7 +122,7 @@ section .background h2{
     font-size: 32px;
     padding: 12px 24px;
     background: linear-gradient(90deg , #000000 30%, #660404 70%);
-    color: white;
+    color:white;
 }
 
 section .container .itens{
