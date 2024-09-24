@@ -1,0 +1,184 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 16px 0;
+    background: linear-gradient(90deg , #000000 30%, #660404 70%);/*Fazer um degrade em cores (90deg em graus a divisoria da divisão)*/
+    color: #ecf0f1; 
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; 
+/*o auto é para manter o conteudo sempre centralizado*/
+}
+
+body, input, textarea, footer {
+/* OBS: não recomendavel usar a fonte pelo (*{}) pois cobre todo o resto feito.*/
+    font-family: "Roboto", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    background-color: rgba(37, 37, 37, 0.938);
+    color: white;
+}
+
+header,
+section h2,
+section h3,
+button {
+    font-family: "Bungee", sans-serif; 
+/* Estilo de fonte nova adicionada */
+    font-weight: normal;
+}
+
+header h1 { 
+/* OBS : É necessário colocar os pesos e estilos nas css pois o navegador vai usar o peso e estilo padrão pelo html(h1, h2 e etc..*/
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header input{
+    padding: 8px 100px;
+    border-radius: 20px;
+    background-color:#10255e;
+}
+
+header label{
+    font-size: 24px;
+}
+
+header nav li { 
+    display: inline;
+/* OBS: o display inline não funciona se não destacar q esta na tag de li(lsitas)*/
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    border-style:outset;
+    border-color: #415796;
+    border-radius: 10px;
+    padding: 8px;
+    transition: 0.3s; 
+/* Suavizando (desacelerando)a mudança ocorrida pelo hover*/
+}
+header nav li a:hover {
+    font-size: 18px;
+    padding: 8px;
+}
+
+.brands-list img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+    padding: 24px 0;
+    color:#64e8fa;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section h3 {
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 12px;
+}
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods{
+    display:flex;
+    justify-content:space-between;
+
+}
+
+form input,
+form textarea,
+button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none; 
+/* Estamos desabilitado o padrão da box do textarea de flexível para estático */
+    height: 180px;
+}
+
+form button {
+    background-color: #182C61;
+    color: white;
+    border-style:outset;
+    cursor: pointer; 
+/* Faz a seta do mouse se tornar um apontar com o indicador*/
+    border-radius: 10px;
+/* faz a curvatura da borda em px */
+}
+
+form button:hover {
+    background-color:#415796;
+}
+
+input:focus, textarea:focus { 
+/* Quando um campo esta selecionado chamamos de "focus" e para editar usamos o pseudo seletor "focus".*/
+    outline-color:#63edff; 
+/*a linha que esta sobre o campo em focus. */
+}
+
+footer {
+    background-color: #182C61;
+    color:#ecf0f1;
+    padding: 12px;
+}
+
+footer .container{
+    display: block;
+}
+footer hr{
+    border-color: #2b3677d3;
+    margin-bottom: 12px;
+}
