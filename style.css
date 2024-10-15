@@ -142,17 +142,16 @@ section .container .background article{
 
 section .container .background img{
     height: 200px;
-    position: absolute;
     margin: 2px 40px 2px 40px ;
     transition: 0.5s;
 }
 
 section .container .background img:hover{
-    height: 220px;
+    transform: translateY(-10px);
 }
 
 section .container .background h3{
-    margin-top: 230px;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
@@ -298,5 +297,5 @@ Footer{
 }
 
 footer hr{
-    border-color: #000000;
+    border-color:#10255e;
 }
